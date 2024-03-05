@@ -3,7 +3,7 @@ export default function Log({ turns }) {
         const { player, square } = turn;
         const { row, col } = square;
         const coord = `${row+1},${col+1}`;
-
+        // Generate log element
         return <li key={coord}>{player} selected {coord}</li>
     }
 
